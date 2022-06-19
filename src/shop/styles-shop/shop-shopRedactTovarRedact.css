@@ -1,0 +1,13 @@
+.redact-tovar-form-main{
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.flex-redact-tovar-for-forms{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}

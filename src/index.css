@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-------------*/
+/*media*/
+/*plansh 1000*/
+/*mob 500*/
+/*-------------*/
+
+/*-------------*/
+/*сетка*/
+/*plansh 1000 90% */
+/*-------------*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("/public/bg-main.svg");
+}
+
+:root{
+    /*цвета текста*/
+    --color-dark-green: #005b53;
+    --color-dark-green-opac: rgba(0, 102, 94, 0.13);
+    --color-some-green: #009a87;
+    --color-lite-green: #9bcfcb;
+    --color-standart-orange: #f68a53;
+    --color-dark-dark: #212529;
+}
+
+/*главный контейнер с определенной шириной*/
+.main-container-blocks{
+    width: 80%;
+    margin: auto;
+    /*background: rgba(255, 0, 0, 0.21);*/
+}
+
+/*размер для всех ссылко и текста обычного*/
+h1{
+    font-size: 105px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+a,p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.small-p, .list-group-item{
+    font-size: 15px;
+}
+.btn{
+    font-size: 18px;
+}
+
+/*media rare*/
+@media screen and (max-width: 1300px){
+    h2{
+        font-size: 38px;
+    }
+    a,p,.btn{
+        font-size: 16px;
+    }
+    .small-p, .list-group-item{
+        font-size: 13px;
+    }
+}
+/*media standart plansh*/
+@media screen and (max-width: 1000px){
+    .main-container-blocks{
+        width: 90%;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    a,p,.btn{
+        font-size: 14px;
+    }
+}
+/*media rare*/
+@media screen and (max-width: 760px){
+    h1{
+        font-size: 75px;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+/*media standart mobile*/
+@media screen and (max-width: 500px){
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    a,p,.btn{
+        font-size: 12px;
+    }
+    .small-p, .list-group-item{
+        font-size: 10px;
+    }
+}
+
+
+/*page 404*/
+.notfound-page-main{
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.notfound-page-main h1,
+.notfound-page-main h3{
+    width: 100%;
+    text-align: center;
+}
+.notfound-page-main a{
+    color: var(--color-standart-orange);
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+}
+.notfound-page-main a:hover{
+    color: var(--color-dark-green);
+}

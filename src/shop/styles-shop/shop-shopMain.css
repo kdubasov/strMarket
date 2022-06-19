@@ -1,0 +1,5 @@
+.flex-card-tovars-from-shop-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

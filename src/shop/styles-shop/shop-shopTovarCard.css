@@ -1,0 +1,36 @@
+.tovar-card-main{
+    width: 32.33%;
+    margin: 0 1% 1% 0;
+}
+
+.tovar-card-main img{
+    max-width: 80%;
+    margin: auto;
+}
+
+.tovar-card-main .list-group-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+button.add-korz-button{
+    padding: 8px 16px;
+    border: none;
+    background: var(--color-standart-orange);
+}
+button.add-korz-button:hover{
+    background: var(--color-dark-green);
+}
+
+@media screen and (max-width: 850px){
+    .tovar-card-main{
+        width: 49%;
+        margin: 0 1% 1% 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .tovar-card-main{
+        width: 99%;
+        margin: 0 1% 1% 0;
+    }
+}

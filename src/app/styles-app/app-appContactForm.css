@@ -1,0 +1,80 @@
+.app-contact-form-main{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.45);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("/public/images/ContactFormApp/Chat.png");
+    background-position: 10% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contact-form-form-main-form h2{
+    color: var(--color-dark-green);
+}
+.contact-form-form-main-form p{
+    margin-bottom: 20px;
+}
+.contact-form-form-main-form{
+    width: 49%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgba(204, 204, 204, 0.45);
+}
+.contact-form-form-main-form .mb-3{
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    /*background: red;*/
+}
+.contact-form-form-main-form textarea.form-control{
+    min-height: 120px;
+}
+.contact-form-form-main-form .form-control{
+    margin-bottom: 10px;
+    color: var(--color-dark-green);
+}
+.contact-form-form-main-form button{
+    margin-top: -15px;
+    margin-left: 10px;
+    padding: 12px 24px;
+    background: var(--color-dark-green);
+    border: none;
+}
+.contact-form-form-main-form button:hover{
+    background: var(--color-standart-orange);
+}
+.contact-form-form-main-form input{
+    /*border: none;*/
+    /*border-bottom: 1px solid var(--color-standart-orange);*/
+}
+
+/*media plansh*/
+@media screen and (max-width: 1300px){
+    .app-contact-form-main{
+        background-size: 32%;
+        min-height: auto;
+    }
+}
+@media screen and (max-width: 700px){
+    .contact-form-form-main-form{
+        width: 70%;
+    }
+    .app-contact-form-main{
+        background-position: left center;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 500px){
+    .contact-form-form-main-form{
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+.app-companys-main{
+    width: 100%;
+    padding: 80px 0;
+}
+
+.app-companys-main h2{
+    color: var(--color-dark-green);
+    margin-bottom: 10px;
+}
+.app-companys-main p{
+    margin-bottom: 10px;
+}
+
+.slider-companys {
+    background: white;
+    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+.slider-companys::before, .slider-companys::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider-companys::after {
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+.slider-companys::before {
+    left: 0;
+    top: 0;
+}
+.slider-companys .slide-track-companys {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider-companys .slide-companys {
+    height: 100px;
+    width: 250px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}

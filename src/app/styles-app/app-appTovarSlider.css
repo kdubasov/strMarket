@@ -1,0 +1,77 @@
+/*контейнер со слайдером*/
+.tovars-slider-app-main{
+    width: 100%;
+    padding: 40px 0;
+    /*background: rgba(255, 0, 0, 0.27);*/
+}
+/*главный заголовок блока*/
+.tovars-slider-app-main h2{
+    color: var(--color-dark-green);
+    margin-bottom: 15px;
+}
+/*сам слайдер*/
+.tovars-slider-app-main .swiper{
+    padding-bottom: 45px;
+    /*background: green;*/
+}
+/*слайд*/
+.tovars-slider-app-main .swiper .swiper-slide{
+    width: 49.5%;
+    margin-right: 1%;
+}
+
+/*картинка в кароточке*/
+.tovars-slider-app-main .swiper .card img{
+    max-width: 50%;
+    margin: 20px auto;
+}
+/*заголовки в карточке*/
+.tovars-slider-app-main .swiper .card h4:first-child{
+    margin-bottom: 10px;
+    color: var(--color-dark-green);
+}
+.tovars-slider-app-main .swiper .card h4:last-child{
+    color: var(--color-standart-orange);
+}
+/*текст в карточке*/
+.tovars-slider-app-main .swiper .card p{
+    /*для выравния в три строки*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+    margin-bottom: 10px;
+}
+/*пагинация*/
+.tovars-slider-app-main .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+}
+.tovars-slider-app-main .swiper-pagination-bullet-active{
+    background: var(--color-dark-green);
+}
+
+/*media for mobile*/
+@media screen and (max-width: 900px){
+    .tovars-slider-app-main .swiper{
+        padding-bottom: 35px;
+    }
+}
+@media screen and (max-width: 690px){
+    .tovars-slider-app-main .swiper{
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 550px){
+    .tovars-slider-app-main .swiper .swiper-slide{
+        width: 99%;
+    }
+    .tovars-slider-app-main .swiper{
+        padding-bottom: 35px;
+    }
+}

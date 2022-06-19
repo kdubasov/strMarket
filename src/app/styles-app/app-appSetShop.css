@@ -1,0 +1,49 @@
+.main-set-shop{
+    width: 100%;
+    padding: 10px 0 60px 0;
+    /*background: rgba(255, 0, 0, 0.17);*/
+}
+
+.set-shop-body h2{
+    color: var(--color-dark-green);
+}
+.set-shop-body p{
+    margin: 5px 0 20px 0;
+}
+.set-shop-body button{
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 12px 24px;
+    background: var(--color-standart-orange);
+    border: none;
+}
+.set-shop-body button:hover,
+.set-shop-body button:active {
+    background: var(--color-dark-dark);
+    border: none;
+}
+
+.but-select-shop{
+    background: var(--color-dark-green);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.set-shop-body .card{
+    width: 50%;
+    margin-top: 10px;
+}
+.set-shop-body .list-group-item{
+    padding: 15px 20px;
+    transition: .3s;
+}
+.set-shop-body .list-group-item:hover{
+    cursor: pointer;
+    background: var(--color-dark-green-opac);
+}
+
+@media screen and (max-width: 500px){
+    .set-shop-body .card{
+        width: 90%;
+    }
+}

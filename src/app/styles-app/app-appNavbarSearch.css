@@ -1,0 +1,61 @@
+/*иконка поиска*/
+.nav-top-search-main i{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-dark-green);
+    transition: .3s;
+}
+.nav-top-search-main i:hover{
+    color: var(--color-standart-orange);
+    cursor: pointer;
+}
+
+/*модалка*/
+
+/*шапка модалки*/
+#modal-search-nav-top .modal-header{
+    padding: 1.3rem 1rem;
+    border-bottom: 1px solid var(--color-dark-green-opac);
+}
+#modal-search-nav-top .modal-header h4{
+    color: var(--color-dark-green);
+}
+
+/*тело модалки*/
+#modal-search-nav-top .modal-body label,
+#modal-search-nav-top .modal-body input{
+    color: var(--color-dark-green);
+    font-size: 16px;
+}
+#modal-search-nav-top .modal-body input:focus{
+    border-color: var(--color-dark-green-opac);
+    box-shadow: 0 0 0 0.25rem var(--color-dark-green-opac);
+}
+/*ссылки при поиске*/
+#modal-search-nav-top .modal-body a,
+#modal-search-nav-top .modal-body a button{
+    text-decoration: none;
+    color: var(--color-dark-green);
+}
+
+/*подвал модалки*/
+#modal-search-nav-top .modal-footer{
+    border-top: none;
+    padding-top: 0;
+}
+#modal-search-nav-top .modal-footer button{
+    background-color: var(--color-dark-green);
+    border: 1px solid var(--color-dark-green);
+}
+
+
+/*media plansh*/
+@media screen and (max-width: 1000px){
+    .nav-top-search-main i{
+        font-size: 18px;
+    }
+    #modal-search-nav-top .modal-body label,
+    #modal-search-nav-top .modal-body input{
+        font-size: 14px;
+    }
+}

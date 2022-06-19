@@ -1,0 +1,59 @@
+.app-popular-categ-main{
+    width: 100%;
+    min-height: 300px;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgba(0, 255, 51, 0.4);*/
+}
+
+/*главный заголовок*/
+.app-popular-categ-main h2{
+    width: 100%;
+    color: var(--color-dark-green);
+    margin-bottom: 15px;
+}
+
+/*карточка*/
+.card-popul-categ{
+    width: 24%;
+    margin-right: .5%;
+}
+
+/*фотка*/
+.card-popul-categ img{
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+/*тело карточки*/
+.card-popul-categ .card-body{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+/*заголовок карточки*/
+.card-popul-categ h4{
+    color: var(--color-dark-green);
+    margin-bottom: 10px;
+}
+
+/*media*/
+
+/*plansh 1000*/
+@media screen and (max-width: 1000px){
+    .card-popul-categ{
+        width: 49%;
+        margin-right: .5%;
+        margin-bottom: .5%;
+    }
+}
+/*mobile 500*/
+@media screen and (max-width: 500px){
+    .card-popul-categ img{
+        max-width: 150px;
+    }
+    .card-popul-categ{
+        width: 99%;
+    }
+}

@@ -1,0 +1,43 @@
+.open-button {
+    background-color: var(--color-lite-green);
+    padding: 3px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    border-radius: 5px;
+}
+
+.open-button img {
+    height: 40px;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: rgba(99, 99, 99, 0.45) 0 2px 8px 0;
+}
+
+.chat-popup p{
+    margin: 5px 0 20px;
+}
+
+.chat-popup input{
+    margin: 10px 0;
+}
+
+.send-popup{
+    margin-right: 10px;
+}

@@ -1,0 +1,80 @@
+/*noinspection CssUnusedSymbol*/
+
+/*само меню*/
+.navbar{
+    border-bottom: 1px solid var(--color-dark-green-opac);
+}
+
+/*контейнер с контентом в меню*/
+.navbar>.container{
+    /*background-color: rgba(255, 0, 0, 0.32);*/
+}
+
+/*logo*/
+.navbar-brand img{
+    width: 55px;
+    height: 55px;
+}
+
+/*контейнеры чтобы выравнивалось нормально по углам*/
+.container-ugl-nav-top{
+    min-width: 40%;
+    display: flex;
+    justify-content: left;
+    /*background-color: rgba(0, 255, 234, 0.45);*/
+}
+
+/*для поиска*/
+.container-ugl-nav-top.just-right{
+    justify-content: right;
+}
+
+/*ссылки*/
+.main-links-nav-top a{
+    text-decoration: none;
+    color: var(--color-dark-green);
+    margin-right: 20px;
+    transition: .3s;
+}
+.main-links-nav-top a:hover{
+    color: var(--color-standart-orange);
+}
+
+/*для планшета выпадающее*/
+.container-ugl-nav-top.just-left-planshet{
+    display: none;
+}
+.container-ugl-nav-top.just-left-planshet .nav-item.dropdown{
+    /*background-color: red;*/
+}
+.container-ugl-nav-top.just-left-planshet .nav-item.dropdown .nav-link{
+    padding: 0;
+    color: var(--color-dark-green);
+}
+.container-ugl-nav-top.just-left-planshet a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-dark-green);
+}
+
+
+/*media planhset 1000*/
+@media screen and (max-width: 1000px){
+    .navbar-brand img{
+        width: 45px;
+        height: 45px;
+    }
+    .container-ugl-nav-top.just-left-dekstop{
+        display: none;
+    }
+    .container-ugl-nav-top.just-left-planshet{
+        display: block;
+    }
+}
+
+/*media mobile 400 (400 только в этом блоке)*/
+@media screen and (max-width: 400px){
+    .container-ugl-nav-top{
+        min-width: 20%;
+    }
+}

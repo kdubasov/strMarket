@@ -1,0 +1,32 @@
+.about-preim-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-preim-main h2{
+    width: 100%;
+    color: var(--color-some-green);
+    margin-bottom: 20px;
+}
+
+.about-preim-main .card{
+    width: 32%;
+}
+
+.about-preim-main .card h4{
+    margin: 6px 0 12px;
+    color: var(--color-dark-green);
+}
+
+@media screen and (max-width: 1000px){
+    .about-preim-main .card{
+        width: 49%;
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width: 500px){
+    .about-preim-main .card{
+        width: 99%;
+    }
+}

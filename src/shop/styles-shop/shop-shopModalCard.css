@@ -1,0 +1,66 @@
+button.open-modal-tovar-button{
+    padding: 8px 16px;
+    border: none;
+    background: var(--color-dark-green);
+}
+button.open-modal-tovar-button:hover{
+    background: var(--color-standart-orange);
+}
+
+.body-tovar-modal{
+    display: flex;
+    align-items: center;
+}
+
+.tovar-modal-img-container{
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    /*background: rgba(255, 0, 0, 0.28);*/
+}
+
+.tovar-modal-info{
+    padding: 0 3%;
+    /*background: rgba(0, 255, 60, 0.28);*/
+}
+
+.tovar-modal-info p{
+    margin: 20px 0 30px 0;
+}
+
+.tovar-modal-info h3{
+    margin: 0 0 30px 0;
+}
+
+.tovar-modal-info button{
+    padding: 12px 24px;
+    background: var(--color-dark-green);
+    border: none;
+}
+.tovar-modal-info button:hover{
+    background: var(--color-standart-orange);
+}
+
+@media screen and (max-width: 950px){
+    .tovar-modal-img-container img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .body-tovar-modal{
+        flex-wrap: wrap;
+    }
+    .tovar-modal-info p{
+        margin: 10px 0;
+    }
+
+    .tovar-modal-info h3{
+        margin: 0 0 20px 0;
+    }
+}
+@media screen and (max-width: 350px){
+    .tovar-modal-img-container img{
+        width: 280px;
+    }
+}

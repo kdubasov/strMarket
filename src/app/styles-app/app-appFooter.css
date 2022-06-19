@@ -1,0 +1,114 @@
+.footer-main{
+    width: 100%;
+    padding: 80px 0;
+    margin-top: 40px;
+    background: rgba(204, 204, 204, 0.28);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+/*главный контейнер*/
+.footer-main-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /*background: rgba(255, 0, 0, 0.36);*/
+}
+/*главный нижний контейнер для ссылок*/
+.footer-main-container.bottom{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*блок с логотипом и надписью*/
+.logo-footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    /*background: rgba(0, 91, 83, 0.16);*/
+}
+.logo-footer img{
+    width: 60px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.spisok-footer ul{
+    list-style: none;
+}
+.spisok-footer ul li a{
+    color: var(--color-dark-dark);
+    text-decoration: none;
+}
+.spisok-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+/*блок с телефоном и почтой*/
+.number-footer{
+    /*background: rgba(0, 128, 0, 0.29);*/
+}
+.number-footer i{
+    margin-right: 5px;
+    color: var(--color-dark-dark);
+}
+.number-footer p{
+    text-align: center;
+}
+.number-footer h4{
+    color: var(--color-dark-green);
+}
+
+/*ссылки нижние и текст*/
+.footer-main-container.bottom a{
+    text-decoration: none;
+    text-align: center;
+    margin: 50px 50px 5px 0;
+}
+.footer-main-container.bottom a:hover{
+    text-decoration: underline;
+}
+.footer-main-container.bottom p{
+    width: 100%;
+    text-align: center;
+}
+.footer-main-container.bottom a,p{
+    color: var(--color-dark-dark);
+}
+
+@media screen and (max-width: 1270px){
+    .number-footer.email{
+        display: none;
+    }
+}
+@media screen and (max-width: 920px){
+    .spisok-footer.secondary{
+        display: none;
+    }
+    .footer-main-container.bottom a{
+        display: none;
+    }
+    .footer-main-container.bottom p{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 650px){
+    .footer-main-container{
+        flex-wrap: wrap;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .spisok-footer{
+        margin-bottom: 10px;
+    }
+    .spisok-footer, .number-footer{
+        text-align: center;
+        width: 100%;
+    }
+    .number-footer.email{
+        margin-top: 10px;
+        display: block;
+    }
+}

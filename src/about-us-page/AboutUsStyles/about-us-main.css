@@ -1,0 +1,8 @@
+.h2-about-main{
+    margin: 60px 0 30px;
+    color: var(--color-some-green);
+}
+.p-about-main{
+    padding-bottom: 40px;
+    color: var(--color-dark-dark);
+}
